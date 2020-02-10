@@ -42,7 +42,7 @@ best for learning new languages.
    pipenv install
    ```
 
-3. After the install completes, run
+3. After the install completes, run 
    ```
    pipenv shell
    ```
