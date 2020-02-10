@@ -5,6 +5,10 @@ methods, and the os module, which gives you access to lower-
 level operating system functionality.
 """
 
+********
+# I DIDNT UNDERSTAND THIS
+********
+
 import sys
 # See docs for the sys module: https://docs.python.org/3.7/library/sys.html
 
