@@ -20,5 +20,8 @@ print(f"x is {x}, y is {round(y, 2)}, z is {z}")
 
 
 # Use the 'format' string method to print the same thing
-
+x = 10
+y = 2.24552
+z = "I like turtles!"
+print("x is " + str(x) + ", y is " + str(round(y, 2)) + ", z is " + z)
 # Finally, print the same thing using an f-string
