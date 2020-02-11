@@ -7,18 +7,11 @@ y = [8, 9, 10]
 # For the following, DO NOT USE AN ASSIGNMENT (=).
 
 # Change x so that it is [1, 2, 3, 4]
-x = [1, 2, 3]
 x.append(4)
 print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
-x = [1, 2, 3]
-x.append(4)
-print(x)
-y = [8, 9, 10]
-x.append(y[0])
-x.append(y[1])
-x.append(y[2])
+x.extend(y)
 print(x)
 
 
