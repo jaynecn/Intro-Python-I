@@ -1,17 +1,30 @@
 # Make a class LatLon that can be passed parameters `lat` and `lon` to the
 # constructor
 
-# YOUR CODE HERE
+class LatLon:
+  #constructor
+  def __init__(self, lat, lon):
+    # attributes(lat, lon)
+    self.lat = lat
+    self.lon = lon
+    
 
 # Make a class Waypoint that can be passed parameters `name`, `lat`, and `lon` to the
 # constructor. It should inherit from LatLon. Look up the `super` method.
 
-# YOUR CODE HERE
+class Waypoint(LatLon):
+  def __init__(self, name):
+    self.name = name
+  super(LatLon, self).__init__(self)
 
 # Make a class Geocache that can be passed parameters `name`, `difficulty`,
 # `size`, `lat`, and `lon` to the constructor. What should it inherit from?
 
-# YOUR CODE HERE
+class Geocache(Waypoint):
+  def __init__(self, difficulty, size):
+    self.difficulty = difficulty
+    self.size = size
+  super(Waypoint, self).__init__(self)
 
 # Make a new waypoint and print it out: "Catacombs", 41.70505, -121.51521
 
