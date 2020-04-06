@@ -59,5 +59,5 @@ waypoints[0]["lon"] = -130
 print(waypoints)
 
 # Write a loop that prints out all the field values for all the waypoints
-for dictionary in waypoints:
-    print(dictionary["name"], dictionary["lat"], dictionary["lon"])
+for data in waypoints:
+    print(f' Name: {data["name"]}, Lat: {data["lat"]}, Lon: {data["lon"]}')
