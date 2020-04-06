@@ -16,7 +16,7 @@ print(x)
 
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
-x.pop(5)
+x.pop(4)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
@@ -27,5 +27,5 @@ print(x)
 print(len(x))
 
 # Print all the values in x multiplied by 1000
-multiply = [n*1000 for n in x]
+multiply = [data * 1000 for data in x]
 print(multiply)
