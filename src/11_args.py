@@ -53,13 +53,9 @@ print(f3(8))     # Should print 9
 #
 # Note: Google "python keyword arguments".
 
-
-# def f4(*args):
-#     print(f"key:{args.name} value:{args}")
-
-def f4(*args):
-    for data in args:
-        print(f"key: {data.name}, value: {data}")
+def f4(**kwargs):
+    for key in kwargs:
+        print(f'key: {key}, value: {kwargs[key]}')
 
 # Should print
 # key: a, value: 12
@@ -78,4 +74,15 @@ d = {
 }
 
 # How do you have to modify the f4 call below to make this work?
-f4(d)
+
+print(d)
+# d = {'a':1, 'b':2}
+# for key,val in d.items():
+#     key = val
+
+
+# I dont know how to convert d from a dictionary to a list of variables #
+        
+# print(convert(d))
+# print(d)
+f4(monster = "goblin", hp = 3)
