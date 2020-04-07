@@ -31,15 +31,54 @@ import sys
 import calendar
 from datetime import datetime
 
-m = int(input("Input the month: "))
-y = int(input("Input the year: "))
-
-
-print(calendar.month(y, m))
-
-# def display_calendar(y, m):
-#   if (len(y)):
-#     print(calendar.month(y, m))
-#   else:
-#     print(calendar.month(2020, m))
+while True:
+  prompt = (input("Input the month and year, comma separated: "))
   
+  separate_numbers = prompt.split(',')
+  print(separate_numbers)
+  print(len(separate_numbers))
+  new_numbers = []
+    
+  if(len(separate_numbers) == 1):
+    new_numbers.append(int(separate_numbers[0]))
+    print(new_numbers)
+  elif(len(separate_numbers) == 2):
+    for i in separate_numbers:
+      j = i.replace(' ', '')
+      new_numbers.append(int(j))
+      print(new_numbers)
+    
+  if(len(new_numbers) == 1):
+    month = new_numbers[0]
+    print(calendar.month(2020, month))
+  elif(len(new_numbers) == 2):
+    month = new_numbers[0]
+    year = new_numbers[1]
+    print(calendar.month(year, month))
+
+  
+  
+  
+  
+  
+  
+  
+# def display_calendar(month, year):
+  
+#   m = (input("Input the month and year, comma separated: "))
+#   separate_numbers = m.split(',')
+#   for i in separate_numbers:
+#     j = i.replace(' ', '')
+#     new_numbers = []
+#     new_numbers.append(int(separate_numbers[0]))
+#     new_numbers.append(int(j))
+  
+#   month = new_numbers[0]
+#   year = new_numbers[1]
+  
+#   if (year):
+#     print(calendar.month(year, month))
+#   else:
+#     print(calendar.month(2020, month))
+
+# display_calendar()

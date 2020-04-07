@@ -44,8 +44,9 @@ x = input("Enter comma-separated numbers: ").split(',')
 print(x)
 y = []
 # y = [int(data) for data in x if data % 2 == 0]
-for n in x:
-    if int(n) % 2 == 0:
-        y.append(n)
+y = [n for n in x if int(n) % 2 == 0]
+# for n in x:
+#     if int(n) % 2 == 0:
+#         y.append(n)
 print(y)
 
