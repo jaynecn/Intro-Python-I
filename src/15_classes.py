@@ -40,7 +40,6 @@ waypoint = Waypoint("Catacombs", 41.70505, -121.51521)
 # Without changing the following line, how can you make it print into something
 # more human-readable? Hint: Look up the `object.__str__` method
 print(waypoint)
-print(waypoint.__str__)
 
 # Make a new geocache "Newberry Views", diff 1.5, size 2, 44.052137, -121.41556
 
@@ -48,4 +47,3 @@ geocache = Geocache("Newberry Views", 44.052137, -121.41556, 1.5, 2)
 
 # Print it--also make this print more nicely
 print(geocache)
-print(geocache.__str__)
