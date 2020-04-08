@@ -53,7 +53,7 @@ print(f3(8))     # Should print 9
 #
 # Note: Google "python keyword arguments".
 
-def f4(**kwargs):
+def f4(**kwargs):   
     for key in kwargs:
         print(f'key: {key}, value: {kwargs[key]}')
 
