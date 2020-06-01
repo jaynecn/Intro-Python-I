@@ -26,6 +26,7 @@ a = [7, 6, 5, 4]
 
 # How do you have to modify the f2 call below to make this work?
 b = tuple(a[:])
+print(b)
 print(f2(*b)) 
 # Should print 22
 
@@ -35,11 +36,11 @@ print(f2(*b))
 # Note: Google "python default arguments" for a hint.
 
 def f3(*args):
-    my_list = args
-    if len(my_list) == 1:
-        return(sum(my_list) + 1)
+    # my_list = args
+    if len(args) == 1:
+        return(sum(args) + 1)
     else:
-        return sum(my_list)
+        return sum(args)
 
 print(f3(1, 2))  # Should print 3
 print(f3(8))     # Should print 9
