@@ -22,6 +22,8 @@ print(x + int(y))
 x = 5
 y = "7"
 
-print(str(x) + y)
+test = (str(x) + y)
+print(test)
+print(type(test))
 
 # YOUR CODE HERE
